@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4FC38F3-D996-4E27-9B87-150A3066EDF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>softQld</RootNamespace>
+    <AssemblyName>softQld</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICO\personal-folder.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>D:\Downloads\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\softQld\softQld\packages\Microsoft.Office.Interop.Excel.12.0.4518.1014\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Downloads\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\softQld\softQld\packages\Microsoft.Report.Viewer.10.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization">
+      <HintPath>D:\Downloads\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\softQld\softQld\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <HintPath>D:\Downloads\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\softQld\softQld\packages\Microsoft.Report.Viewer.10.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms">
+      <HintPath>D:\Downloads\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\softQld\softQld\packages\Microsoft.Report.Viewer.10.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>D:\Downloads\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\[Sharecode.vn] Phan mem quan ly diem hoc sinh thcs c# +  bao cao\softQld\softQld\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="doituong.cs" />
+    <Compile Include="ExportToExcelBangdiemlop.cs" />
+    <Compile Include="ExportToExcelDiem.cs" />
+    <Compile Include="ExportToExcelDSHocSinh.cs" />
+    <Compile Include="ExportToExcelHanhKiem.cs" />
+    <Compile Include="frmDangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangky.Designer.cs">
+      <DependentUpon>frmDangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangnhap.Designer.cs">
+      <DependentUpon>frmDangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSHocsinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDSHocsinh.Designer.cs">
+      <DependentUpon>frmDSHocsinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiaovien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiaovien.Designer.cs">
+      <DependentUpon>frmGiaovien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHanhKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHanhKiem.designer.cs">
+      <DependentUpon>frmHanhKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHocSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHocSinh.designer.cs">
+      <DependentUpon>frmHocSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLop.designer.cs">
+      <DependentUpon>frmLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonhoc.Designer.cs">
+      <DependentUpon>frmMonhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhapDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapDiem.designer.cs">
+      <DependentUpon>frmNhapDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhapDSHStuExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapDSHStuExcel.Designer.cs">
+      <DependentUpon>frmNhapDSHStuExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhapHKtuExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapHKtuExcel.Designer.cs">
+      <DependentUpon>frmNhapHKtuExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhaptuExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhaptuExcel.Designer.cs">
+      <DependentUpon>frmNhaptuExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanlytaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanlytaikhoan.Designer.cs">
+      <DependentUpon>frmQuanlytaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKeDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeDiem.designer.cs">
+      <DependentUpon>frmThongKeDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKeHanhKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeHanhKiem.designer.cs">
+      <DependentUpon>frmThongKeHanhKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimkiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimkiem.Designer.cs">
+      <DependentUpon>frmTimkiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTongketdiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTongketdiem.designer.cs">
+      <DependentUpon>frmTongketdiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser.Designer.cs">
+      <DependentUpon>frmuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemdiemHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemdiemHS.Designer.cs">
+      <DependentUpon>frmXemdiemHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hamchucnang.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangky.resx">
+      <DependentUpon>frmDangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangnhap.resx">
+      <DependentUpon>frmDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDSHocsinh.resx">
+      <DependentUpon>frmDSHocsinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiaovien.resx">
+      <DependentUpon>frmGiaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHanhKiem.resx">
+      <DependentUpon>frmHanhKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHocSinh.resx">
+      <DependentUpon>frmHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLop.resx">
+      <DependentUpon>frmLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonhoc.resx">
+      <DependentUpon>frmMonhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapDiem.resx">
+      <DependentUpon>frmNhapDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapDSHStuExcel.resx">
+      <DependentUpon>frmNhapDSHStuExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapHKtuExcel.resx">
+      <DependentUpon>frmNhapHKtuExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhaptuExcel.resx">
+      <DependentUpon>frmNhaptuExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanlytaikhoan.resx">
+      <DependentUpon>frmQuanlytaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeDiem.resx">
+      <DependentUpon>frmThongKeDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeHanhKiem.resx">
+      <DependentUpon>frmThongKeHanhKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimkiem.resx">
+      <DependentUpon>frmTimkiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTongketdiem.resx">
+      <DependentUpon>frmTongketdiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser.resx">
+      <DependentUpon>frmuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemdiemHS.resx">
+      <DependentUpon>frmXemdiemHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICO\0349.png" />
+    <Content Include="ICO\103_56.ico" />
+    <Content Include="ICO\15.png" />
+    <Content Include="ICO\16.png" />
+    <Content Include="ICO\add-user.png" />
+    <Content Include="ICO\add.png" />
+    <Content Include="ICO\AlienAqua access.png" />
+    <Content Include="ICO\AlienAqua Help.png" />
+    <Content Include="ICO\Alpha Dista Icon 81.png" />
+    <Content Include="ICO\Assignment.png" />
+    <Content Include="ICO\Audiobooks.png" />
+    <Content Include="ICO\config.png" />
+    <Content Include="ICO\delete-user.png" />
+    <Content Include="ICO\Delete.png" />
+    <Content Include="ICO\exet.ru %2842%29.png" />
+    <Content Include="ICO\Fichier .Font.png" />
+    <Content Include="ICO\file-add.png" />
+    <Content Include="ICO\file-delete.png" />
+    <Content Include="ICO\file-export.png" />
+    <Content Include="ICO\file-import.png" />
+    <Content Include="ICO\hk.jpg" />
+    <Content Include="ICO\Home - 2.png" />
+    <Content Include="ICO\logoff.ico" />
+    <Content Include="ICO\MSN-Messenger1-AKKASONE.png" />
+    <Content Include="ICO\MSN-Messenger2-AKKASONE.png" />
+    <Content Include="ICO\MSN-Messenger3-AKKASONE.png" />
+    <Content Include="ICO\MSN2.PNG" />
+    <Content Include="ICO\My-Recieved-Files.png" />
+    <Content Include="ICO\pack office 3d v2.png" />
+    <Content Include="ICO\personal-folder.ico" />
+    <Content Include="ICO\personal-folder2.ico" />
+    <Content Include="ICO\power.png" />
+    <Content Include="ICO\print-view.png" />
+    <Content Include="ICO\print.ico" />
+    <Content Include="ICO\printer.ico" />
+    <Content Include="ICO\printer.png" />
+    <Content Include="ICO\Printers and Faxes.png" />
+    <Content Include="ICO\Restart.ico" />
+    <Content Include="ICO\save.png" />
+    <Content Include="ICO\script-add.png" />
+    <Content Include="ICO\script-delete.png" />
+    <Content Include="ICO\Search.png" />
+    <Content Include="ICO\search0001.png" />
+    <Content Include="ICO\snowe icon 18.ico" />
+    <Content Include="ICO\TextFile.png" />
+    <Content Include="ICO\user group.ico" />
+    <Content Include="ICO\user2.ico" />
+    <Content Include="ICO\users.ico" />
+    <Content Include="ICO\view +.png" />
+    <Content Include="ICO\view-.png" />
+    <Content Include="ICO\view.png" />
+    <Content Include="ICO\WRI.png" />
+    <Content Include="ICO\XoopsSZ.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\8Control_Panel.ico" />
+    <None Include="Resources\1Adminstrative.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
