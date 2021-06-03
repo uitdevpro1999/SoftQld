@@ -24,7 +24,6 @@ namespace softQld
         {
             InitializeComponent();
         }
-        //Download source code FREE tai Sharecode.vn
         DatabaseConnection cls = new DatabaseConnection();
 
         //Hàm lấy niên khóa
@@ -51,7 +50,6 @@ namespace softQld
         }
 
         //Hàm lấy năm học cho bảng điểm học sinh
-        //Download source code FREE tai Sharecode.vn
         void LaynamhocHS()
         {
             string nienkhoa = "", namhoc = "";

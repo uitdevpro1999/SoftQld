@@ -24,7 +24,6 @@ namespace softQld
             // taọ các đối tượng Excel
 
 
-            //Download source code FREE tai Sharecode.vn
             //Tạo mới một Excel WorkBook
             oExcel.Visible = true;
             oExcel.DisplayAlerts = false;

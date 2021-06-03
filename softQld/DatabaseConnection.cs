@@ -13,7 +13,7 @@ namespace softQld
 {
     class DatabaseConnection
     {
-        public static string strconnect = @"Data Source=MYPC\SQLEXPRESS;Initial Catalog=SoftQLD_Recovered;Integrated Security=True";
+        public static string strconnect = @"Data Source=MYPC\SQLEXPRESS;Initial Catalog=SoftQLD;Integrated Security=True";
         public static SqlConnection sqlcon;
         SqlCommand sqlcom;
         SqlDataAdapter sqlda;

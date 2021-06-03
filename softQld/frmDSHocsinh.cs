@@ -33,7 +33,6 @@ namespace softQld
                 pstrName = clname;
                 pstrValue = clvalue;
             }
-            //Download source code FREE tai Sharecode.vn
             public string Name
             {
                 get { return pstrName; }

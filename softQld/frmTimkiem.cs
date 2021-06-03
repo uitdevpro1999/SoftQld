@@ -30,7 +30,6 @@ namespace softQld
                     cls.Data2DataGridView(grvTimKiem, "Select * from Hocsinh where MaHS=N'" + txtTimKiem.Text + "'");
 
                 txtTimKiem.Text = "";
-                //Download source code FREE tai Sharecode.vn
             }
             if (rdTenHS.Checked == true)
             {
@@ -54,7 +53,6 @@ namespace softQld
             }
             bttIN.Enabled = true;
         }
-        //Download source code FREE tai Sharecode.vn
         private void bttThoat_Click(object sender, EventArgs e)
         {
             this.Close();

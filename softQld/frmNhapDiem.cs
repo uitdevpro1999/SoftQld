@@ -59,7 +59,6 @@ namespace softQld
                     ctr.Text = "";
                 }
             }
-            //Download source code FREE tai Sharecode.vn
             foreach (Control ctr in this.groupBox3.Controls)
             {
                 if ((ctr is TextBox) || (ctr is ComboBox))

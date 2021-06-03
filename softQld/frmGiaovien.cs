@@ -26,7 +26,6 @@ namespace softQld
         //Hàm xóa dữ liệu trong các điều khiển
         void clearText()
         {
-            //Download source code FREE tai Sharecode.vn
             foreach (Control ctr in this.groupBox1.Controls)
             {
                 if (ctr is ComboBox || ctr is TextBox)
@@ -43,7 +42,6 @@ namespace softQld
         {
             //Kiểm tra tình trạng của nút nhấn
             kiemtra = !kiemtra;
-            //Download source code FREE tai Sharecode.vn
             if (kiemtra)
             {
                 //Nếu nút được nhấn gọi hàm xóa dữ liệu trong các điều khiển
